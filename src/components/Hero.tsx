@@ -8,12 +8,11 @@ export const Hero = () => {
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-              <span className="block">Transform Your</span>
-              <span className="block text-primary">Digital Future</span>
+              <span className="block">Siesta Markets</span>
+              <span className="block text-primary">Where Digital Assets, AI & Finance Converge</span>
             </h1>
             <p className="mt-6 text-lg text-gray-500">
-              We help businesses scale with cutting-edge solutions in AI, blockchain, and fintech. 
-              Build your next breakthrough with us.
+              We <span className="font-semibold">build, invest, and advise</span> at the intersection of <span className="font-semibold">digital assets, AI, and fintech</span>—helping founders, investors, and institutions navigate the next wave of financial innovation.
             </p>
             <div className="mt-8 flex gap-4 sm:justify-center lg:justify-start">
               <Button size="lg" className="group">
@@ -34,17 +33,25 @@ export const Hero = () => {
                   </div>
                   <div className="relative flex justify-center text-sm">
                     <span className="bg-white px-2 text-gray-500">
-                      Trusted by industry leaders
+                      From the Minds Behind
                     </span>
                   </div>
                 </div>
-                <div className="mt-6 grid grid-cols-3 gap-3">
-                  {[1, 2, 3].map((i) => (
+                <div className="mt-6 space-y-4">
+                  {[
+                    { name: "SocialPass", desc: "The leading self-hostable solution for event management" },
+                    { name: "Magnify Cash", desc: "Instant, gas-free micro-loans using World ID as collateral" },
+                    { name: "Strykr.ai", desc: "AI-driven volatility tracking for next-level trading insights" },
+                    { name: "NFT Lists", desc: "Open-source NFT discoverability at scale" }
+                  ].map((project, i) => (
                     <div
-                      key={i}
-                      className="h-12 rounded-lg bg-gray-100 animate-fadeIn"
+                      key={project.name}
+                      className="rounded-lg bg-gray-50 p-4 animate-fadeIn"
                       style={{ animationDelay: `${i * 0.1}s` }}
-                    />
+                    >
+                      <h3 className="font-semibold text-gray-900">{project.name}</h3>
+                      <p className="text-sm text-gray-600">{project.desc}</p>
+                    </div>
                   ))}
                 </div>
               </div>

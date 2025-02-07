@@ -1,17 +1,20 @@
-import { Check } from "lucide-react";
+import { Building, ChartBar, DollarSign } from "lucide-react";
 
 const features = [
   {
-    title: "AI Integration",
-    description: "Leverage cutting-edge AI technology to automate and optimize your workflows.",
+    title: "Product & Software Development",
+    description: "We take bold ideas from concept to market, leveraging cutting-edge AI, blockchain, and fintech innovations to build products that scale.",
+    icon: Building
   },
   {
-    title: "Blockchain Solutions",
-    description: "Build secure, scalable blockchain applications with our expert guidance.",
+    title: "Advisory & Consulting",
+    description: "From tokenomics design to AI-driven financial modeling, we provide deep expertise to help teams execute, grow, and win.",
+    icon: ChartBar
   },
   {
-    title: "Fintech Innovation",
-    description: "Transform financial services with our innovative fintech solutions.",
+    title: "Investments & Ventures",
+    description: "We back standout founders with capital, mentorship, and hands-on support—fueling disruptive ideas that redefine industries.",
+    icon: DollarSign
   },
 ];
 
@@ -21,10 +24,10 @@ export const Features = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-primary">
-            Features
+            What We Do
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to scale your business
+            Building the Future of Finance
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -36,7 +39,7 @@ export const Features = () => {
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <Check className="h-5 w-5 flex-none text-primary" />
+                  <feature.icon className="h-5 w-5 flex-none text-primary" />
                   {feature.title}
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
