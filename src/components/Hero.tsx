@@ -39,9 +39,9 @@ export const Hero = () => {
                 </div>
                 <div className="mt-6 space-y-4">
                   {[
-                    { name: "SocialPass", desc: "The leading self-hostable solution for event management" },
                     { name: "Magnify Cash", desc: "Instant, gas-free micro-loans using World ID as collateral" },
                     { name: "Strykr.ai", desc: "AI-driven volatility tracking for next-level trading insights" },
+                    { name: "SocialPass", desc: "The leading self-hostable solution for event management" },
                     { name: "NFT Lists", desc: "Open-source NFT discoverability at scale" }
                   ].map((project, i) => (
                     <div
