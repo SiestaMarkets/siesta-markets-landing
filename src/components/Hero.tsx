@@ -1,12 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { BackgroundPaths } from "@/components/ui/background-paths";
 
 export const Hero = () => {
   return (
     <div className="relative overflow-hidden bg-gradient-to-b from-primary/5 to-secondary/5 py-20 sm:py-32">
-      <BackgroundPaths />
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
@@ -48,7 +46,7 @@ export const Hero = () => {
                   ].map((project, i) => (
                     <div
                       key={project.name}
-                      className="rounded-lg bg-white/80 backdrop-blur-sm p-4 animate-fadeIn"
+                      className="rounded-lg bg-gray-50 p-4 animate-fadeIn"
                       style={{ animationDelay: `${i * 0.1}s` }}
                     >
                       <h3 className="font-semibold text-gray-900">{project.name}</h3>
